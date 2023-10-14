@@ -43,16 +43,22 @@ class _CartScreenState extends State<CartScreen> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
-                        // angleleft321 (109:613)
-                        margin: EdgeInsets.fromLTRB(
-                            0 * fem, 0 * fem, 43 * fem, 0 * fem),
-                        width: 44 * fem,
-                        height: 44 * fem,
-                        child: Image.asset(
-                          'assets/page-6/images/angle-left.png',
+                      GestureDetector(
+                        onTap: () {
+                                // Navigate back to the previous screen when tapped
+                                Navigator.of(context).pop();
+                              },
+                        child: Container(
+                          // angleleft321 (109:613)
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 43 * fem, 0 * fem),
                           width: 44 * fem,
                           height: 44 * fem,
+                          child: Image.asset(
+                            'assets/page-6/images/angle-left.png',
+                            width: 44 * fem,
+                            height: 44 * fem,
+                          ),
                         ),
                       ),
                       Container(

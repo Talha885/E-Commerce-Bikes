@@ -25,16 +25,22 @@ class CheckOutScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  // frame8sK (117:813)
-                  margin:
-                      EdgeInsets.fromLTRB(19 * fem, 0 * fem, 0 * fem, 23 * fem),
-                  width: 18 * fem,
-                  height: 14 * fem,
-                  child: Image.asset(
-                    'assets/page-6/images/frame-Htm.png',
+                GestureDetector(
+                  onTap: () {
+                    // Navigate back to the previous screen when tapped
+                    Navigator.of(context).pop();
+                  },
+                  child: Container(
+                    // frame8sK (117:813)
+                    margin: EdgeInsets.fromLTRB(
+                        19 * fem, 0 * fem, 0 * fem, 23 * fem),
                     width: 18 * fem,
                     height: 14 * fem,
+                    child: Image.asset(
+                      'assets/page-6/images/frame-Htm.png',
+                      width: 18 * fem,
+                      height: 14 * fem,
+                    ),
                   ),
                 ),
                 Container(
@@ -48,7 +54,7 @@ class CheckOutScreen extends StatelessWidget {
                       fontSize: 36 * ffem,
                       fontWeight: FontWeight.w700,
                       height: 1.5125 * ffem / fem,
-                      color: const Color(0xffb07f7f),
+                      color: Color.fromARGB(255, 255, 203, 203),
                     ),
                   ),
                 ),
@@ -173,9 +179,9 @@ class CheckOutScreen extends StatelessWidget {
                 Container(
                   // frame14nVw (117:819)
                   margin:
-                      EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 18 * fem),
+                      EdgeInsets.fromLTRB(3 * fem, 0 * fem, 24 * fem, 18 * fem),
                   padding: EdgeInsets.fromLTRB(
-                      16 * fem, 16 * fem, 16 * fem, 16 * fem),
+                      16 * fem, 16 * fem, 10 * fem, 16 * fem),
                   height: 105 * fem,
                   decoration: BoxDecoration(
                     color: const Color(0xfff8d1d1),

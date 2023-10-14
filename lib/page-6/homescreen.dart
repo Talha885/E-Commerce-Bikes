@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:myapp/page-6/bagdescription.dart';
 import 'package:myapp/page-6/bags.dart';
 import 'package:myapp/page-6/bikedescription.dart';
 import 'package:myapp/page-6/bikes.dart';
@@ -7,14 +8,17 @@ import 'package:myapp/page-6/helmetdescription.dart';
 import 'package:myapp/page-6/helmets.dart';
 import 'package:myapp/page-6/mountainbike.dart';
 import 'package:myapp/page-6/snickers.dart';
+import 'package:myapp/page-6/snickersdescription.dart';
 import 'dart:ui';
 
 import 'package:myapp/utils.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 391.8911743164;
+    double baseWidth = 402;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
@@ -35,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   // autogroupnunyVdT (2PjPgVYDBgSj94DZeZNuNy)
                   margin: EdgeInsets.fromLTRB(
-                      18 * fem, 0 * fem, 8.88 * fem, 28.98 * fem),
+                      18 * fem, 0 * fem, 8.88 * fem, 30 * fem),
                   width: double.infinity,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,27 +47,17 @@ class HomeScreen extends StatelessWidget {
                       Container(
                         // chooseyourbikecCH (102:1221)
                         margin: EdgeInsets.fromLTRB(
-                            0 * fem, 2.02 * fem, 146.96 * fem, 0 * fem),
+                            10 * fem, 2.02 * fem, 146.96 * fem, 0 * fem),
                         child: Text(
                           'Choose Your Bike',
                           style: SafeGoogleFont(
                             'Poppins',
-                            fontSize: 20 * ffem,
+                            fontSize: 22 * ffem,
                             fontWeight: FontWeight.w700,
                             height: 1.5 * ffem / fem,
                             letterSpacing: -0.3000000119 * fem,
                             color: const Color(0xffffffff),
                           ),
-                        ),
-                      ),
-                      Container(
-                        // searchfieldbutton44H (102:1223)
-                        width: 44.06 * fem,
-                        height: 44.06 * fem,
-                        child: Image.asset(
-                          'assets/page-6/images/searchfield-button.png',
-                          width: 44.06 * fem,
-                          height: 44.06 * fem,
                         ),
                       ),
                     ],
@@ -92,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                         top: 67.000005722 * fem,
                         child: Align(
                           child: SizedBox(
-                            width: 549 * fem,
+                            width: 600 * fem,
                             height: 675.5 * fem,
                           ),
                         ),
@@ -149,50 +143,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        // item4Y9o (102:1290)
-                        left: 217.0091247559 * fem,
-                        top: 593.4236450195 * fem,
-                        child: Container(
-                          padding: EdgeInsets.fromLTRB(
-                              0 * fem, 2.73 * fem, 0 * fem, 0 * fem),
-                          width: 320 * fem,
-                          height: 227 * fem,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                // heart24outlineDmj (102:1297)
-                                margin: EdgeInsets.fromLTRB(299.82 * fem,
-                                    0 * fem, 0 * fem, 144.75 * fem),
-                                width: 18.33 * fem,
-                                height: 15.52 * fem,
-                                child: Image.asset(
-                                  'assets/page-6/images/heart-24-outline-aLR.png',
-                                  width: 18.33 * fem,
-                                  height: 15.52 * fem,
-                                ),
-                              ),
-                              Container(
-                                // roadbikeBMB (102:1293)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 2 * fem),
-                              ),
-                              Container(
-                                // peugeotlr01fn9 (102:1294)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 3 * fem),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Positioned(
                         // group236cZ (109:399)
                         left: 30 * fem,
                         top: 302.5000915527 * fem,
                         child: Container(
                           width: 362 * fem,
-                          height: 758.5 * fem,
+                          height: 800 * fem,
                           child: Stack(
                             children: [
                               Positioned(
@@ -201,7 +157,7 @@ class HomeScreen extends StatelessWidget {
                                 top: 0 * fem,
                                 child: Container(
                                   width: 362 * fem,
-                                  height: 289.5 * fem,
+                                  height: 400 * fem,
                                   child: Stack(
                                     children: [
                                       GestureDetector(
@@ -313,14 +269,6 @@ class HomeScreen extends StatelessWidget {
                                           ],
                                         ),
                                       ),
-
-                                      //guygiibinon
-                                      //guygiibinon
-                                      //guygiibinon
-                                      //guygiibinon
-                                      //guygiibinon
-                                      //guygiibinon
-
                                       Positioned(
                                         // heart24outlineSrm (109:410)
                                         left: 126.9880065918 * fem,
@@ -712,7 +660,7 @@ class HomeScreen extends StatelessWidget {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
                                             builder: (context) =>
-                                                const HelmetDescriptionScreen(),
+                                                const BagDescriptionScreen(),
                                           ));
                                         },
                                         child: Container(
@@ -762,7 +710,7 @@ class HomeScreen extends StatelessWidget {
                                                       width: 133 * fem,
                                                       height: 140 * fem,
                                                       child: Image.asset(
-                                                        'assets/page-6/images/cobi-krumholz-mzkf19ydezk-unsplash-removebg-preview-1-SDP.png',
+                                                        'assets/page-6/images/cobi-krumholz-mzkf19ydezk-unsplash-removebg-preview-5-Ft5.png',
                                                         fit: BoxFit.cover,
                                                       ),
                                                     ),
@@ -781,7 +729,7 @@ class HomeScreen extends StatelessWidget {
                                           children: [
                                             Text(
                                               // roadhelmet4pq (109:440)
-                                              'Road Helmet',
+                                              'BackPack',
                                               style: SafeGoogleFont(
                                                 'Poppins',
                                                 fontSize: 13 * ffem,
@@ -954,7 +902,7 @@ class HomeScreen extends StatelessWidget {
                                     Navigator.of(context)
                                         .push(MaterialPageRoute(
                                       builder: (context) =>
-                                          const MountainBikeScreen(),
+                                          const SnickersDescriptionScreen(),
                                     ));
                                   },
                                   child: Container(
@@ -1017,27 +965,26 @@ class HomeScreen extends StatelessWidget {
                                               Positioned(
                                                 // imageynh (109:468)
                                                 left: 10 * fem,
-                                                top: 10.8790893555 * fem,
+                                                top: 5 * fem,
                                                 child: Container(
                                                   padding: EdgeInsets.fromLTRB(
                                                       12 * fem,
                                                       22 * fem,
                                                       12 * fem,
-                                                      21.43 * fem),
-                                                  width: 145 * fem,
-                                                  height: 132 * fem,
+                                                      12 * fem),
+                                                  width: 160 * fem,
+                                                  height: 180 * fem,
                                                   decoration: BoxDecoration(
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             10 * fem),
                                                   ),
                                                   child: Center(
-                                                    // robertbyetg36rvceqngunsplashre (109:469)
                                                     child: SizedBox(
                                                       width: 121 * fem,
-                                                      height: 88.57 * fem,
+                                                      height: 160 * fem,
                                                       child: Image.asset(
-                                                        'assets/page-6/images/robert-bye-tg36rvceqng-unsplash-removebg-preview-4-Rrh.png',
+                                                        'assets/page-6/images/cobi-krumholz-mzkf19ydezk-unsplash-removebg-preview-3-SA5.png',
                                                       ),
                                                     ),
                                                   ),
@@ -1057,7 +1004,7 @@ class HomeScreen extends StatelessWidget {
                                             children: [
                                               Text(
                                                 // mountainbikeMYM (109:463)
-                                                'Mountain Bike',
+                                                'Snickers',
                                                 style: SafeGoogleFont(
                                                   'Poppins',
                                                   fontSize: 13 * ffem,
@@ -1085,7 +1032,7 @@ class HomeScreen extends StatelessWidget {
                                               ),
                                               Text(
                                                 // qTX (109:465)
-                                                '\$ 1,999.99',
+                                                '\$ 120',
                                                 style: SafeGoogleFont(
                                                   'Poppins',
                                                   fontSize: 13 * ffem,

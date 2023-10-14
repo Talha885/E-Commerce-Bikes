@@ -25,16 +25,22 @@ class PaymentCompleted extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  // frameq1T (118:1012)
-                  margin: EdgeInsets.fromLTRB(
-                      0 * fem, 0 * fem, 323.89 * fem, 165 * fem),
-                  width: 18 * fem,
-                  height: 14 * fem,
-                  child: Image.asset(
-                    'assets/page-6/images/frame-wff.png',
+                GestureDetector(
+                  onTap: () {
+                                // Navigate back to the previous screen when tapped
+                                Navigator.of(context).pop();
+                              },
+                  child: Container(
+                    // frameq1T (118:1012)
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 323.89 * fem, 165 * fem),
                     width: 18 * fem,
                     height: 14 * fem,
+                    child: Image.asset(
+                      'assets/page-6/images/frame-wff.png',
+                      width: 18 * fem,
+                      height: 14 * fem,
+                    ),
                   ),
                 ),
                 Container(
