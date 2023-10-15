@@ -6,6 +6,7 @@ import 'package:myapp/page-6/bikedescription.dart';
 import 'package:myapp/page-6/bikes.dart';
 import 'package:myapp/page-6/helmetdescription.dart';
 import 'package:myapp/page-6/helmets.dart';
+import 'package:myapp/page-6/loginscreen.dart';
 import 'package:myapp/page-6/mountainbike.dart';
 import 'package:myapp/page-6/snickers.dart';
 import 'package:myapp/page-6/snickersdescription.dart';
@@ -60,6 +61,24 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                       ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Container(
+                          color: Colors.blue,
+                          child: SizedBox(
+                            width: 50,
+                            child: IconButton(
+                              onPressed: () {
+                                // Navigate to the LoginScreen
+                                Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => LoginScreen(),
+                                ));
+                              },
+                              icon: Icon(Icons.logout, color: Colors.black),
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -188,6 +207,20 @@ class HomeScreen extends StatelessWidget {
                                               ),
                                             ),
                                             Positioned(
+                                              // robertbyetg36rvceqngunsplashre (109:412)
+                                              left: 22 * fem,
+                                              top: 87.4999084473 * fem,
+                                              child: Align(
+                                                child: SizedBox(
+                                                  width: 121 * fem,
+                                                  height: 88.57 * fem,
+                                                  child: Image.asset(
+                                                    'assets/page-6/images/robert-bye-tg36rvceqng-unsplash-removebg-preview-4.png',
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
                                               // shadowRYM (109:402)
                                               left: 0 * fem,
                                               top: 164.1785583496 * fem,
@@ -281,36 +314,6 @@ class HomeScreen extends StatelessWidget {
                                               'assets/page-6/images/heart-24-outline-Byj.png',
                                               width: 19.99 * fem,
                                               height: 17.74 * fem,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        // robertbyetg36rvceqngunsplashre (109:412)
-                                        left: 22 * fem,
-                                        top: 87.4999084473 * fem,
-                                        child: Align(
-                                          child: SizedBox(
-                                            width: 121 * fem,
-                                            height: 88.57 * fem,
-                                            child: Image.asset(
-                                              'assets/page-6/images/robert-bye-tg36rvceqng-unsplash-removebg-preview-4.png',
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        // rectangle480cuf (109:413)
-                                        left: 6.9998779297 * fem,
-                                        top: 0 * fem,
-                                        child: Align(
-                                          child: SizedBox(
-                                            width: 355 * fem,
-                                            height: 67.5 * fem,
-                                            child: Image.asset(
-                                              'assets/page-6/images/rectangle-480-95B.png',
-                                              width: 355 * fem,
-                                              height: 67.5 * fem,
                                             ),
                                           ),
                                         ),

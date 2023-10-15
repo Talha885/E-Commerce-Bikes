@@ -15,6 +15,7 @@ class CheckOutScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           width: double.infinity,
+          height: 1000,
           child: Container(
             // checkoutF2q (117:877)
             padding: EdgeInsets.fromLTRB(21 * fem, 63 * fem, 0 * fem, 0 * fem),
@@ -95,19 +96,11 @@ class CheckOutScreen extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Container(
-                              // frameGEm (117:832)
-                              width: 30 * fem,
-                              height: 30 * fem,
-                              child: Image.asset(
-                                'assets/page-6/images/frame.png',
-                                width: 30 * fem,
-                                height: 30 * fem,
-                              ),
-                            ),
+                            
                           ],
                         ),
                       ),
+                      SizedBox(height: 5),
                       Container(
                         // frame16CeD (117:834)
                         margin: EdgeInsets.fromLTRB(
@@ -117,11 +110,11 @@ class CheckOutScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              // gustavoseptimusXRb (117:835)
+                              
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 7 * fem),
                               child: Text(
-                                'Gustavo Septimus',
+                                'Talha Qayyum',
                                 style: SafeGoogleFont(
                                   'Prompt',
                                   fontSize: 18 * ffem,
@@ -131,6 +124,7 @@ class CheckOutScreen extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            SizedBox(height: 5),
                             Container(
                               // frame15Eqo (117:836)
                               padding: EdgeInsets.fromLTRB(
@@ -151,13 +145,14 @@ class CheckOutScreen extends StatelessWidget {
                                       height: 13.52 * fem,
                                     ),
                                   ),
+                                  
                                   Container(
                                     // rodneystreetharvestermomissour (117:839)
                                     constraints: BoxConstraints(
                                       maxWidth: 231 * fem,
                                     ),
                                     child: Text(
-                                      '608 Rodney Street, Harvester MO Missouri 63301',
+                                      'University Of Sahiwal, Sahiwal ,Punjab',
                                       style: SafeGoogleFont(
                                         'Prompt',
                                         fontSize: 14 * ffem,
@@ -169,7 +164,9 @@ class CheckOutScreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
+                              
                             ),
+                            SizedBox(height: 5),
                           ],
                         ),
                       ),
@@ -267,16 +264,7 @@ class CheckOutScreen extends StatelessWidget {
                       SizedBox(
                         width: 21.5 * fem,
                       ),
-                      Container(
-                        // group38693Cu (117:825)
-                        width: 30 * fem,
-                        height: 30 * fem,
-                        child: Image.asset(
-                          'assets/page-6/images/group-3869.png',
-                          width: 30 * fem,
-                          height: 30 * fem,
-                        ),
-                      ),
+                     
                     ],
                   ),
                 ),
@@ -291,7 +279,7 @@ class CheckOutScreen extends StatelessWidget {
                       Container(
                         // selectpaymentmethod6ws (117:816)
                         margin: EdgeInsets.fromLTRB(
-                            0 * fem, 0 * fem, 157 * fem, 0 * fem),
+                            0 * fem, 0 * fem, 70 * fem, 0 * fem),
                         child: Text(
                           'Select Payment Method',
                           style: SafeGoogleFont(
@@ -303,12 +291,13 @@ class CheckOutScreen extends StatelessWidget {
                           ),
                         ),
                       ),
+                     SizedBox(width: 78,),
                       Text(
                         // addnewcardQSm (117:817)
-                        'Add new card',
+                        'Recommended',
                         style: SafeGoogleFont(
                           'Prompt',
-                          fontSize: 10 * ffem,
+                          fontSize: 15 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.5125 * ffem / fem,
                           color: const Color(0xffffffff),
@@ -371,6 +360,7 @@ class CheckOutScreen extends StatelessWidget {
                                         width: 44 * fem,
                                         height: 34 * fem,
                                       ),
+                                      
                                     ),
                                     Container(
                                       // group3871KrZ (117:847)
@@ -401,11 +391,11 @@ class CheckOutScreen extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // gustavoseptimusyw7 (117:852)
+                                
                                 margin: EdgeInsets.fromLTRB(
                                     7 * fem, 0 * fem, 0 * fem, 0 * fem),
                                 child: Text(
-                                  'GUSTAVO SEPTIMUS',
+                                  'TALHA QAYYUM',
                                   style: SafeGoogleFont(
                                     'Prompt',
                                     fontSize: 13 * ffem,
@@ -469,7 +459,7 @@ class CheckOutScreen extends StatelessWidget {
                               ),
                               Text(
                                 // gustavoseptimusg6m (117:876)
-                                'GUSTAVO SEPTIMUS',
+                                'TALHA QAYYUM',
                                 style: SafeGoogleFont(
                                   'Prompt',
                                   fontSize: 12 * ffem,

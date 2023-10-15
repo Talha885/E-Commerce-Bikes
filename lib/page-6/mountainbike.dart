@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/page-6/mycart.dart';
+import 'package:myapp/page-6/checkout.dart';
+
 import 'dart:ui';
 
 import 'package:myapp/utils.dart';
@@ -390,7 +391,7 @@ class _MountainBikeScreenState extends State<MountainBikeScreen> {
                               onTap: () {
                                 // Navigate to CartScreen when tapped
                                 Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => CartScreen(),
+                                  builder: (context) => CheckOutScreen(),
                                 ));
                               },
                               child: Container(

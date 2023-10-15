@@ -20,14 +20,14 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          height:950,
+          height: 950,
           color: const Color(0xff242c38),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 110),
               Container(
-                margin: const EdgeInsets.only(bottom:25,right: 100),
+                margin: const EdgeInsets.only(bottom: 25, right: 100),
                 constraints: const BoxConstraints(
                   maxWidth: 279,
                 ),
@@ -68,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 onTap: () {
                   // Navigate to HomeScreen when tapped
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
+                    builder: (context) => const HomeScreen(),
                   ));
                 },
                 child: Container(
@@ -100,16 +100,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     onTap: () {
                       // Navigate to RegisterScreen when tapped
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => RegisterScreen(),
+                        builder: (context) => const RegisterScreen(),
                       ));
                     },
-                    child: const Text(
-                      'Register Account Now',
-                      style: TextStyle(color: Colors.blue),
+                    child: Padding(
+                      padding: const EdgeInsets.all(18.0),
+                      child: const Text(
+                        'Register Account Now',
+                        style: TextStyle(color: Colors.blue),
+                      ),
                     ),
+                    
                   ),
                 ],
               ),
+              
               const SizedBox(height: 50),
               Container(
                 margin: const EdgeInsets.only(bottom: 22),
@@ -159,11 +164,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          padding: EdgeInsets.fromLTRB(38, 16, 49, 16),
+                          padding: const EdgeInsets.fromLTRB(38, 16, 49, 16),
                           height: double.infinity,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFFE8ECF4)),
-                            color: Color(0xFFFFFFFF),
+                            border: Border.all(color: const Color(0xFFE8ECF4)),
+                            color: const Color(0xFFFFFFFF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
@@ -178,14 +183,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Container(
-                          padding:
-                              EdgeInsets.fromLTRB(38.18, 16.18, 43.18, 16.18),
+                          padding: const EdgeInsets.fromLTRB(
+                              38.18, 16.18, 43.18, 16.18),
                           height: double.infinity,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFFE8ECF4)),
-                            color: Color(0xFFFFFFFF),
+                            border: Border.all(color: const Color(0xFFE8ECF4)),
+                            color: const Color(0xFFFFFFFF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
@@ -200,13 +205,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Container(
-                          padding: EdgeInsets.fromLTRB(39.43, 15, 44.45, 14.99),
+                          padding: const EdgeInsets.fromLTRB(
+                              39.43, 15, 44.45, 14.99),
                           height: double.infinity,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFFE8ECF4)),
-                            color: Color(0xFFFFFFFF),
+                            border: Border.all(color: const Color(0xFFE8ECF4)),
+                            color: const Color(0xFFFFFFFF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(

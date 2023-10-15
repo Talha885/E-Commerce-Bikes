@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/page-6/mycart.dart';
+import 'package:myapp/page-6/checkout.dart';
+
 import 'dart:ui';
 
 import 'package:myapp/utils.dart';
@@ -390,7 +391,7 @@ class _BikeDescriptionScreenState extends State<BikeDescriptionScreen> {
                               onTap: () {
                                 // Navigate to CartScreen when tapped
                                 Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => CartScreen(),
+                                  builder: (context) => CheckOutScreen(),
                                 ));
                               },
                               child: Container(
@@ -418,7 +419,7 @@ class _BikeDescriptionScreenState extends State<BikeDescriptionScreen> {
                                 ),
                                 child: Center(
                                   child: Text(
-                                    'Add to Cart',
+                                    'Proceed to Payment',
                                     style: SafeGoogleFont(
                                       'Poppins',
                                       fontSize: 15 * ffem,
